@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3004/paintings")
-    .then(r => r.json())
+    .then((r) => r.json())
     .then(paintings => (console.log(paintings), setPaintings(paintings)))
   },[])
 
@@ -28,6 +28,21 @@ function App() {
     return setPaintings(filteredPaintings)
   }  
 
+  function handleAddNewPainting(formData){
+
+   fetch("http://localhost:3004/paintings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then(r => r.json())
+      .then(newItem => console.log(newItem));
+
+      setPaintings([...paintings, formData])
+    
+  }
 
   return (
     <div className="app">
@@ -37,7 +52,7 @@ function App() {
           <Gallery paintings={paintings} onSearch={handleSearch} />
         </Route>
         <Route exact path="/add">
-          <Add />
+          <Add handleAddNewPainting={handleAddNewPainting} />
         </Route>
         <Route exact path="/">
           <Home />

@@ -12,6 +12,7 @@ function Gallery({paintings, onSearch}){
 
     let displayPainting = paintings.map(painting => {
         return <PaintingCard 
+                 key={painting.id}   
                  title={painting.painting_title}
                  image={painting.img_src}
                  id={painting.id}
