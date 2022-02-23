@@ -1,9 +1,15 @@
 import React from 'react';
+import Search from "./Search"
 
 function Gallery(){
-    // return map of each individual painting 
-    // card 
-    // filter 
+
+    // build card 
+    return(
+        
+        <div>Gallery
+            <Search />
+        </div>
+    )
 }
 
 export default Gallery

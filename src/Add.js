@@ -1,7 +1,9 @@
 import React from 'react';
 
 function Add(){
-    // return form 
+    return (
+        <div>Add</div>
+    )
 }
 
 export default Add;

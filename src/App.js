@@ -11,9 +11,19 @@ import Home from "./Home"
 
 function App() {
   return (
-    // navbar 
     <div className="app">
       <NavBar />
+      <Switch>
+        <Route exact path="/gallery">
+          <Gallery />
+        </Route>
+        <Route exact path="/add">
+          <Add />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
 
 
     </div>
