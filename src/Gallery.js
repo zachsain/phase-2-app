@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Search from "./Search"
 import PaintingCard from "./PaintingCard"
 
 function Gallery({paintings, onSearch}){
 
+    // const [paintingsCopy, setCopiedPaintings] = useState(paintings)
+
+    
+
     console.log(paintings)
 
-    const displayPainting = paintings.map(painting => {
+    let displayPainting = paintings.map(painting => {
         return <PaintingCard 
                  title={painting.painting_title}
                  image={painting.img_src}

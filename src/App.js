@@ -20,9 +20,10 @@ function App() {
   },[])
 
  
-  function onSearch(searchValue){
-    let filteredPaintings = paintings.filter(painting => {
-      painting.painting_title.toLowerCase().inludes(searchValue.toLowerCase())
+  function handleSearch(searchValue){
+
+    const filteredPaintings = paintings.filter(paintings => {
+     return paintings.painting_title.toLowerCase().includes(searchValue.toLowerCase())
     })
     return setPaintings(filteredPaintings)
   }  
@@ -33,7 +34,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/gallery">
-          <Gallery paintings={paintings} onSearch={onSearch} />
+          <Gallery paintings={paintings} onSearch={handleSearch} />
         </Route>
         <Route exact path="/add">
           <Add />
