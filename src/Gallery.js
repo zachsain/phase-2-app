@@ -2,7 +2,7 @@ import React from 'react';
 import Search from "./Search"
 import PaintingCard from "./PaintingCard"
 
-function Gallery({paintings}){
+function Gallery({paintings, onSearch}){
 
     console.log(paintings)
 
@@ -12,10 +12,11 @@ function Gallery({paintings}){
                  image={painting.img_src}
                  id={painting.id}
         />    })
+
     return(
         
         <div>Gallery
-            <Search />
+            <Search onSearch={onSearch} />
             {displayPainting}
         </div>
     )

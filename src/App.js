@@ -19,12 +19,21 @@ function App() {
     .then(paintings => (console.log(paintings), setPaintings(paintings)))
   },[])
 
+ 
+  function onSearch(searchValue){
+    let filteredPaintings = paintings.filter(painting => {
+      painting.painting_title.toLowerCase().inludes(searchValue.toLowerCase())
+    })
+    return setPaintings(filteredPaintings)
+  }  
+
+
   return (
     <div className="app">
       <NavBar />
       <Switch>
         <Route exact path="/gallery">
-          <Gallery paintings={paintings} />
+          <Gallery paintings={paintings} onSearch={onSearch} />
         </Route>
         <Route exact path="/add">
           <Add />
