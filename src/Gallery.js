@@ -11,6 +11,7 @@ function Gallery({paintings, onSearch}){
     console.log(paintings)
 
     let displayPainting = paintings.map(painting => {
+
         return <PaintingCard 
                  key={painting.id}   
                  title={painting.painting_title}
@@ -20,9 +21,12 @@ function Gallery({paintings, onSearch}){
 
     return(
         
-        <div>Gallery
+        <div>
+            <h2 class={'gallery-header'}>Gallery</h2>
             <Search onSearch={onSearch} />
+            <ul class={"cards"}>
             {displayPainting}
+            </ul>      
         </div>
     )
 }
