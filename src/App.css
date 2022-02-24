@@ -121,6 +121,7 @@
 
 
 .emoji-button {
+  text-align :center;
   border-color: black;
   border: none;
   background: none;
