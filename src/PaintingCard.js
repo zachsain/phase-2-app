@@ -9,10 +9,11 @@ function PaintingCard({title, id, image}){
         <ul className="card">
           <h4 class={"title"}>{title}</h4>
           <img className="cardImage" src={image} alt={title} />
+
           {liked ? (
-            <button onClick={() => setLiked(!liked)} className="emoji-button favorite active">★</button>
+            <button onClick={() => setLiked(!liked)} className="emoji-button favorite active">Favorite ★</button>
           ) : (
-            <button onClick={() => setLiked(!liked)} className="emoji-button favorite" >☆</button>
+            <button onClick={() => setLiked(!liked)} className="emoji-button favorite" >Favorite ☆</button>
           )}
         </ul>
         </div>

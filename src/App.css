@@ -42,6 +42,7 @@
 }
 
 .home-page {
+  font-family: monospace;
   text-align: center;
 }
 
@@ -54,6 +55,7 @@
 
 
 #bob-ross-bio {
+  padding-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -66,6 +68,8 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 500px;
+  padding-bottom: 10px;
+  padding-right: 42px;
 }
 
 
@@ -90,6 +94,7 @@
 
 .title {
   text-align: center;
+  font-family: fantasy;
 }
 
 .container {
@@ -103,6 +108,7 @@
   height: auto;
 }
 
+
 /* .card .details {
   padding: 0.5rem;
 } */
@@ -113,10 +119,15 @@
 }
 
 .cards {
-  
-  list-style: none;
-  display: flex;
+
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+  /* list-style: none;
+  display: flex;
+  flex-wrap: wrap; */
 }
 
 
@@ -141,6 +152,7 @@
 }
 
 .searchbar {
+  font-family: monospace;
   flex: 1 1 auto;
   margin: 0 1rem;
   display: flex;
@@ -165,13 +177,19 @@
 }
 
 .gallery-header{
+  font-family: monospace;
   text-align: center;
 }
 
 .add-header {
+  font-family: monospace;
   text-align: center;
 }
 
 .form{
   text-align: center;
+}
+
+.button {
+  font-family: monospace;
 }

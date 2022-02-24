@@ -37,14 +37,16 @@ function Add({handleAddNewPainting}){
     }
 
     return (
-    <div className="new-painting-form">
+    <div class={"new-painting-form"}>
       <h2 class={'add-header'}>Add New Painting</h2>
       <form class={'form'} onSubmit={handleSubmit} >
         <input  value={paintingTitle} onChange={handleTitle} type="text" name="name" placeholder="Painting Title" />
         <input  value={paintingImage} onChange={handleImage} type="text" name="image" placeholder="Image URL" />
-        <button type="submit">Add Painting</button>
+        <button class={'button'} type="submit">Add Painting</button>
       </form>
+      <ul class={"cards"}>
       {paintingCard}
+      </ul>
      
     </div>
     )
