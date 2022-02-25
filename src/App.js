@@ -12,25 +12,32 @@ import Home from "./Home"
 function App() {
 
   const [paintings, setPaintings] = useState([])
+  const [paintingsCopy, setCopy] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:3004/paintings")
     .then((r) => r.json())
-    .then(paintings => (console.log(paintings), setPaintings(paintings)))
+    .then(paintings => (setCopy(paintings), setPaintings(paintings)))
   },[])
 
  
   function handleSearch(searchValue){
 
-    const filteredPaintings = paintings.filter(paintings => {
-     return paintings.painting_title.toLowerCase().includes(searchValue.toLowerCase())
+    const filteredPaintings = paintings.filter(painting => {
+     return painting.painting_title.toLowerCase().includes(searchValue.toLowerCase())
     })
     if (searchValue === ""){
-          setPaintings(paintings)
+          setPaintings(paintingsCopy)
+          console.log("copy", paintingsCopy)
     } else {
+
             setPaintings(filteredPaintings)
+            console.log("filtered", filteredPaintings)                  
     }
+
   }  
+
+
 
   function handleAddNewPainting(formData){
 

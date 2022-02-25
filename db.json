@@ -1344,6 +1344,11 @@
       "painting_title": "Snickers",
       "img_src": "https://www.bluey.tv/wp-content/uploads/2020/07/Bandit-Chilli.jpg",
       "id": 51
+    },
+    {
+      "painting_title": "Another one",
+      "img_src": "https://www.tasteofhome.com/wp-content/uploads/2020/04/bob-ross-painting-social.jpg",
+      "id": 52
     }
   ]
 }
