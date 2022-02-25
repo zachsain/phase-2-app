@@ -8,7 +8,7 @@ function Gallery({paintings, onSearch}){
 
     
 
-    console.log(paintings)
+    console.log("Gallery:", paintings)
 
     let displayPainting = paintings.map(painting => {
 

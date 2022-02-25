@@ -8,7 +8,7 @@ function PaintingCard({title, id, image}){
         <div class={'container'}>
         <ul className="card">
           <h4 class={"title"}>{title}</h4>
-          <img className="cardImage" src={image} alt={title} />
+          <img width={'450'} height={"300"} className="cardImage" src={image} alt={title} />
 
           {liked ? (
             <button onClick={() => setLiked(!liked)} className="emoji-button favorite active">Favorite ★</button>

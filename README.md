@@ -33,15 +33,35 @@
         - <PaintingCard />
 
 - The App utilizes each component for a specfic purpose:
+
+
     - <App /> 
-         - Is the parent component, which stores our state, handles the fetching, as well as the posting
-         - It also holds all of the seprate child components that allow our app to have functionality 
+         - Is the parent component, which stores our state, handles the fetching, as well as the posting.
+         - It also holds all of the seprate child components that allow our app to have functionality. 
+         - Makes use of the Route, and Switch hooks which provide us with the client side routing functionality.
     - <NavBar />
-        - The first component rendered in the <App/> component 
-        - Stays on the page no matter which path the user navigates to
-        - Uses NavLink hook to provide the paths to each of the seperate links provided for the user to click
-    <Gallery>
-        - 
+        - The first component rendered in the <App/> component.
+        - Stays on the page no matter which path the user navigates to.
+        - Uses NavLink hook to provide the paths to each of the seperate links provided for the user to click.
+    -  <Gallery />
+        - Gallery is the first component offered within our switch statement: 
+            - Important to note, our switch statement / hook is being used to offer up a number of paths for our app component to render.
+            - Depending on the path determined by the client's request the app component will render different components, <Gallery /> being the first option.
+        - Within the Gallery component there are a couple of different actions taking place: 
+            - The first being rendering the paintings, which takes place in the displayPainting variable, which runs a map function for every painting and renders the painting card to the page via the <PaintingCard /> component 
+            - The second being the <Search /> component which allows users the ability to search for a particular painting, by updating the <App /> components state via filtering the result of <Search /> components value. 
+    
+    - <Add />
+        - Add is the second component offered within our app's switch statement.
+        - The add component renders a controlled form that takes in the title of a new painting and an image url and then add's that information to our server while also updating state for include the newly added painting 
+        - The only component present within the <Add /> is the <PaintingCard /> component, which in this case only renders one card to the page with the information being passed via props of the information provided via the form. 
+    - <Home />
+        - Home is the final component offered within the switch statement and renders the home page. 
+        - All that is contained within the home component is very simple JSX including a header an image and a paragraph of information 
+
+
+
+         
 
 <!-- # The <App /> Component 
 

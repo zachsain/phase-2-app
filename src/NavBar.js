@@ -25,7 +25,7 @@ const linkStyles = {
           Home
         </NavLink>
         <NavLink
-          to="/gallery"
+          to="/paintings"
           exact
           style={linkStyles}
           activeStyle={{
@@ -35,7 +35,7 @@ const linkStyles = {
           Gallery
         </NavLink>
         <NavLink
-          to="/add"
+          to="/paintings/new"
           exact
           style={linkStyles}
           activeStyle={{

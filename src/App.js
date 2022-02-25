@@ -11,7 +11,7 @@ import Home from "./Home"
 
 function App() {
 
-  const [paintings, setPaintings] = useState()
+  const [paintings, setPaintings] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:3004/paintings")
@@ -25,7 +25,11 @@ function App() {
     const filteredPaintings = paintings.filter(paintings => {
      return paintings.painting_title.toLowerCase().includes(searchValue.toLowerCase())
     })
-    return setPaintings(filteredPaintings)
+    if (searchValue === ""){
+          setPaintings(paintings)
+    } else {
+            setPaintings(filteredPaintings)
+    }
   }  
 
   function handleAddNewPainting(formData){
@@ -48,10 +52,10 @@ function App() {
     <div className="app">
       <NavBar />
       <Switch>
-        <Route exact path="/gallery">
+        <Route exact path="/paintings">
           <Gallery paintings={paintings} onSearch={handleSearch} />
         </Route>
-        <Route exact path="/add">
+        <Route exact path="/paintings/new">
           <Add handleAddNewPainting={handleAddNewPainting} />
         </Route>
         <Route exact path="/">
