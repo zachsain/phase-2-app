@@ -19,12 +19,33 @@
 
 # How the App is built 
 
-- The App is built in react so it's important to note that the app is broken down into components that have a single use in the application. 
-- The App also makes use of a client-side routing which enables us to have a single html page. 
+- The App is built in react so it's important to note that the app is broken down into components that have a single but reusable use in the application. 
+- The App also makes use of a client-side routing which enables us to have a single html file. 
+- The App is compromised of 7 components: 
 
-# The <App /> Component 
+    - <App />
+     - <NavBar />
+     - <Home />
+     - <Gallery />
+        - <Search />
+        - <PaintingCard />
+     - <Add />
+        - <PaintingCard />
+
+- The App utilizes each component for a specfic purpose:
+    - <App /> 
+         - Is the parent component, which stores our state, handles the fetching, as well as the posting
+         - It also holds all of the seprate child components that allow our app to have functionality 
+    - <NavBar />
+        - The first component rendered in the <App/> component 
+        - Stays on the page no matter which path the user navigates to
+        - Uses NavLink hook to provide the paths to each of the seperate links provided for the user to click
+    <Gallery>
+        - 
+
+<!-- # The <App /> Component 
 
 - The <App /> component is the parent component and where all of the fetching, posting, and state is managed. 
-- It is also the component that manages our client side routing feature: 
+- It is also the component that manages our client side routing feature:  -->
 
 
