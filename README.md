@@ -9,8 +9,22 @@
 - For the user to get to the gallery, they simply click the gallery button in the navbar.
 - Once the user lands on the gallery page, automatically all of Bob's wonderful works render below. 
 -  The user can then peruse his works or search for a particular paintings they'd like to view. 
+- If a user likes a particular painting they can make sure to click the favorite button at the bottom of the page. 
 - When the user type in the search bar the gallery list is then filtered to only show paintings that match the characters the user typed in for their search. 
 - But what if a particular painting is not in the gallery?  
 - The user can then click on the add button in the navbar to go to a form that will allow them to add a new painting to the gallery. 
 -  Once the user adds a new painting it will render on the add page as well as the bottom of the gallery page. 
-- 
+- The user can then go back to gallery page serach for their new painting, just to make sure it's in there. 
+
+
+# How the App is built 
+
+- The App is built in react so it's important to note that the app is broken down into components that have a single use in the application. 
+- The App also makes use of a client-side routing which enables us to have a single html page. 
+
+# The <App /> Component 
+
+- The <App /> component is the parent component and where all of the fetching, posting, and state is managed. 
+- It is also the component that manages our client side routing feature: 
+
+
