@@ -22,8 +22,9 @@ function Add({handleAddNewPainting}){
         console.log(formData)
         handleAddNewPainting(formData)
         newCard = <PaintingCard 
-                          title={formData.painting_title}
-                          image={formData.img_src}/>
+                    title={formData.painting_title}
+                    image={formData.img_src}
+                />
         setCard(newCard)
     }
 
