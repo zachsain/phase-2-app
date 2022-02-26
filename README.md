@@ -57,7 +57,7 @@
         - The only component present within the <Add /> is the <PaintingCard /> component, which in this case only renders one card to the page with the information being passed via props of the information provided via the form. 
     - <Home />
         - Home is the final component offered within the switch statement and renders the home page. 
-        - All that is contained within the home component is very simple JSX including a header an image and a paragraph of information 
+        - All that is contained within the home component is very simple JSX including a header an image and a paragraph of information. 
 
 
 
