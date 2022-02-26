@@ -23,7 +23,7 @@
 - The App also makes use of a client-side routing which enables us to have a single html file. 
 - The App is compromised of 7 components: 
 
-    - <App />
+    - {<App />}
      - <NavBar />
      - <Home />
      - <Gallery />
