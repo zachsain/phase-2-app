@@ -61,11 +61,3 @@
 
 
 
-         
-
-<!-- # The <App /> Component 
-
-- The <App /> component is the parent component and where all of the fetching, posting, and state is managed. 
-- It is also the component that manages our client side routing feature:  -->
-
-
