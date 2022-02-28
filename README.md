@@ -65,4 +65,8 @@
     - The useEffect hook is run upon the page rendering 
     - It takes the the data and update the state of the application using the setPaintings state hook
     - When a user add's a new painting to the collection that information is pushed up via props and a POST request is then made upon clicking the add button
-    - State is then co
+    - Within the promise of the POST request state is then updated with a copy of the current state, as well as the new painting 
+
+
+
+    
