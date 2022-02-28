@@ -59,7 +59,10 @@
         - Home is the final component offered within the switch statement and renders the home page. 
         - All that is contained within the home component is very simple JSX including a header an image and a paragraph of information. 
 
-# REST & State 
+# REST, Hooks, & State
 
-    - The App does utilize RESTful features 
-    - 
+    -  The painting data is being fetched within the useEffect() hook
+    - The useEffect hook is run upon the page rendering 
+    - It takes the the data and update the state of the application using the setPaintings state hook
+    - When a user add's a new painting to the collection that information is pushed up via props and a POST request is then made upon clicking the add button
+    - State is then co
