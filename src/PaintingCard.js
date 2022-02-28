@@ -5,7 +5,7 @@ function PaintingCard({title, id, image}){
     const [liked, setLiked] = useState(false)
 
     return (
-        <div class={'container'}>
+        <div className={'container'}>
         <ul className="card">
           <h4 class={"title"}>{title}</h4>
           <img width={'450'} height={"300"} className="cardImage" src={image} alt={title} />

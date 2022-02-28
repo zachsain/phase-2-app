@@ -1349,6 +1349,11 @@
       "painting_title": "Another one",
       "img_src": "https://www.tasteofhome.com/wp-content/uploads/2020/04/bob-ross-painting-social.jpg",
       "id": 52
+    },
+    {
+      "painting_title": "Bob Ross New Painting",
+      "img_src": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2019%2F03%2Ftoy-story-4-exclu-1-2000.jpg",
+      "id": 53
     }
   ]
 }

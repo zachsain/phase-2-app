@@ -10,7 +10,7 @@
 - Once the user lands on the gallery page, automatically all of Bob's wonderful works render below. 
 -  The user can then peruse his works or search for a particular paintings they'd like to view. 
 - If a user likes a particular painting they can make sure to click the favorite button at the bottom of the page. 
-- When the user type in the search bar the gallery list is then filtered to only show paintings that match the characters the user typed in for their search. 
+- When the user types a character in the search bar the gallery list is then filtered to only show paintings that match the characters the user typed in for their search. 
 - But what if a particular painting is not in the gallery?  
 - The user can then click on the add button in the navbar to go to a form that will allow them to add a new painting to the gallery. 
 -  Once the user adds a new painting it will render on the add page as well as the bottom of the gallery page. 
@@ -59,5 +59,7 @@
         - Home is the final component offered within the switch statement and renders the home page. 
         - All that is contained within the home component is very simple JSX including a header an image and a paragraph of information. 
 
+# REST & State 
 
-
+    - The App does utilize RESTful features 
+    - 

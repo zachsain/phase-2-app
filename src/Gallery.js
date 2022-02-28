@@ -22,7 +22,7 @@ function Gallery({paintings, onSearch}){
     return(
         
         <div>
-            <h2 class={'gallery-header'}>Gallery</h2>
+            <h2 className={'gallery-header'}>Gallery</h2>
             <Search onSearch={onSearch} />
             <ul class={"cards"}>
             {displayPainting}

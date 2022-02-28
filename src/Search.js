@@ -11,7 +11,7 @@ function Search({onSearch}){
        
 
     return (
-        <div className="searchbar">
+        <div className={"searchbar"}>
             <label htmlFor="search">Search Paintings:</label>
             <input
             type="text"
