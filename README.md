@@ -9,7 +9,7 @@
 - For the user to get to the gallery, they simply click the gallery button in the navbar.
 - Once the user lands on the gallery page, automatically all of Bob's wonderful works render below. 
 -  The user can then peruse his works or search for a particular paintings they'd like to view. 
-- If a user likes a particular painting they can make sure to click the favorite button at the bottom of the page. 
+- If a user likes a particular painting they can make sure to click the favorite button at the bottom of the painting card. 
 - When the user types a character in the search bar the gallery list is then filtered to only show paintings that match the characters the user typed in for their search. 
 - But what if a particular painting is not in the gallery?  
 - The user can then click on the add button in the navbar to go to a form that will allow them to add a new painting to the gallery. 
@@ -37,7 +37,7 @@
 
     - App 
          - Is the parent component, which stores our state, handles the fetching, as well as the posting.
-         - It also holds all of the seprate child components that allow our app to have functionality. 
+         - It also holds all of the separate child components that allow our app to have functionality. 
          - Makes use of the Route, and Switch hooks which provide us with the client side routing functionality.
     - NavBar 
         - The first component rendered in the App component.
