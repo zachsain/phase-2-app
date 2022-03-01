@@ -67,6 +67,8 @@
     - When a user add's a new painting to the collection that information is pushed up via props and a POST request is then made upon clicking the add button
     - Within the promise of the POST request state is then updated with a copy of the current state, as well as the new painting 
 
+Hope you enjoy! 
+
 
 
     
